@@ -14,7 +14,7 @@ import javax.swing.JPanel;
 import javax.swing.Timer;
  
  
-public class Board extends JPanel implements ActionListener {
+public class Board extends JPanel implements ActionListener{
  
     private final int WIDTH = 300;
     private final int HEIGHT = 300;
