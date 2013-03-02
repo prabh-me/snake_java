@@ -3,18 +3,23 @@ import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Image;
+
+
 import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
  
+
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 import javax.swing.Timer;
  
  
-public class Board extends JPanel implements ActionListener{
+public class Board extends JPanel implements ActionListener
+
+{
  
     private final int WIDTH = 300;
     private final int HEIGHT = 300;
@@ -42,13 +47,14 @@ public class Board extends JPanel implements ActionListener{
     private Image head;
  
  
-    public Board() {
+    public Board() 
+    {
         addKeyListener(new TAdapter());
  
         setBackground(Color.black);
  
         ImageIcon iid = new ImageIcon(this.getClass().getResource("dot.png"));
-        ball = iid.getImage();
+        ball =iid.getImage();
  
         ImageIcon iia = new ImageIcon(this.getClass().getResource("apple.png"));
         apple = iia.getImage();
@@ -58,6 +64,7 @@ public class Board extends JPanel implements ActionListener{
  
         setFocusable(true);
         initGame();
+    
     }
  
  
