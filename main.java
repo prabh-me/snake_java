@@ -177,6 +177,8 @@ public class Board extends JPanel implements ActionListener
             inGame = false;
         }
     }
+    
+    
  
     public void locateApple() {
         int r = (int) (Math.random() * RAND_POS);
@@ -193,8 +195,7 @@ public class Board extends JPanel implements ActionListener
             move();
         }
  
-        repaint();
-    }
+        repaint();}
  
  
     private class TAdapter extends KeyAdapter {
